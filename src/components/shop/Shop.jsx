@@ -1,21 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './Shop.css'
+import { useEffect } from 'react';
+import Products from '../products/Products';
 
 const Shop = () => {
-    const [products , setproducts] = useState([])
-    useEffect(()=>{
+    const [products,setproducts] = useState([])
+     useEffect(()=>{
         fetch('products.json')
-        .then(res=> res.json())
+        .then(res=>res.json())
         .then(data =>setproducts(data))
-    },[])
+         },[])
     return (
-        <div className="shop-container">
-            <div className="product-container">
-              
-            </div>
-            <div className="card-container">
+        <div className='Shop-container'>
+          <div className='product-container'>
+          {
+            products.map(product =><Products
+            product ={product}
             
-            </div>
+            key ={name}
+
+            >
+
+            </Products>
+            )
+          }
+          </div>
+          <div>
+            <h1>india</h1>
+          </div>
         </div>
     );
 };

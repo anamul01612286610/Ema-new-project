@@ -1,4 +1,5 @@
 import logo from '../../images/Logo.svg'
+
 import './Header.css'
 const Header = () => {
     return (
@@ -9,6 +10,7 @@ const Header = () => {
            <a href="">Order Review</a>
            <a href="">Manage Inventory</a>
            <a href="">Login</a>
+        
            </div>
         </div>
     );

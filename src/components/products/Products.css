@@ -1,0 +1,31 @@
+.product{
+height: 510px;
+width: 300px;
+border: 1px solid #95A0A7;
+margin: 10px;
+border-radius: 10px;
+position: relative;
+}
+.product img{
+    height: 286px;
+    width: 286px;
+    margin: 7px;
+    border-radius: 10px;
+}
+
+.product-info h3{
+ margin-top: 5px;
+}
+.product-info{
+padding-left: 10px;
+}
+
+.btn-product{
+    width: 100%;
+     background-color: #FFE0B3;
+     position: absolute;
+     bottom: 0;
+}
+.btn-product:hover{
+    background-color: peru;
+}
